@@ -17,10 +17,10 @@ const server = app.listen(PORT, () => {
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://live-docs-8yao.onrender.com",
+    origin: "*",
     methods: ["GET", "POST"],
   },
-});
+})
 
 const defaultValue = "";
 
