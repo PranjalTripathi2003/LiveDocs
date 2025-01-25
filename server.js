@@ -17,7 +17,7 @@ const server = app.listen(PORT, () => {
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: "*",
+    origin: "https://live-docs-8yao.onrender.com",
     methods: ["GET", "POST"],
   },
 });
